@@ -5,10 +5,9 @@
 */
 
 function sync ( Arguments, List ) {
-	var results = [ ];
-
 	if (Arguments[ 'expression' ]) {
-		var expr = Arguments[ 'expression' ];
+		var expr = Arguments[ 'expression' ]
+			, results = [ ];
 		// TODO: check expr.constructor == 'RegExp'
 
 		for (var idx in List) {
@@ -19,7 +18,8 @@ function sync ( Arguments, List ) {
 		}
 	}
 	else if (Arguments[ 'function' ]) {
-		var f = Arguments[ 'function' ]);
+		var f = Arguments[ 'function' ])
+			, results = [ ];
 		// TODO: check for function-ness of f
 
 		for (var idx in List) {
@@ -36,3 +36,41 @@ function sync ( Arguments, List ) {
 	return results;
 }
 
+function async ( Arguments, List, Callback ) {
+	var q = require('q');
+	if (Arguments[ 'expression' ]) {
+		var expr = Arguments[ 'expression' ])
+			, results = [ ];
+
+		return q.all(
+			List.map( function (t) {
+				if (expr.test(t)) {
+					results.push( t );
+				}
+			} )
+		).then( function () {
+			return results;
+		} );
+	}
+	else if (Arguments[ 'function' ]) {
+		var f = Arguments[ 'function' ])
+			, results = [ ];
+
+		return q.all(
+			List.map( function (t) {
+				if ( f(t) ) {
+					results.push( t );
+				}
+			} )
+		).then( function () {
+			return Callback( results );
+		} );
+	}
+	else {
+		// throw an exception
+	}
+
+	return undefined;
+}
+
+// jane@cpan.org // vim:tw=80:ts=2:noet

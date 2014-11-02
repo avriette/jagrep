@@ -10,7 +10,7 @@ Interface
 
 * `var results = Jgrep.sync( { 'expression': new RegExp( '^test$' ) }, list )`
 * `var results = Jgrep.sync( { 'function' : function (t) { if ( t == 'test' ) return 1 } }, list )`
-* `var promise = Jgrep.async( { 'expression': new RegExp( '^test$' ) }, list } )`
+* `var promise = Jgrep.async( { 'expression': new RegExp( '^test$' ) }, list )`
 * `Jgrep.async( { 'function' : function (t) { if ( t == 'test' ) return 1 } }, list, callback )`
 
 License

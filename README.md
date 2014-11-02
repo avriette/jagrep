@@ -8,7 +8,7 @@ The `grep` implemented in this package *is not optimised for performance*, and l
 Interface
 =====
 
-* `var results = Jgrep.sync( { 'expression': new RegExp( '/^test$/' ) }, list )`
+* `var results = Jgrep.sync( { 'expression': new RegExp( '^test$' ) }, list )`
 * `var results = Jgrep.sync( { 'function' : function (t) { if ( t == 'test' ) return 1 } }, list )`
 * `var promise = Jgrep.async( { 'expression': new RegExp }, list } )`
 * `Jgrep.async( { 'function' : function (t) { if ( t == 'test' ) return 1 } }, list, callback )`

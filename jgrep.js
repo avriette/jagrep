@@ -18,7 +18,7 @@ function sync ( Arguments, List ) {
 		}
 	}
 	else if (Arguments[ 'function' ]) {
-		var f = Arguments[ 'function' ])
+		var f = Arguments[ 'function' ]
 			, results = [ ];
 		// TODO: check for function-ness of f
 
@@ -39,7 +39,7 @@ function sync ( Arguments, List ) {
 function async ( Arguments, List, Callback ) {
 	var q = require('q');
 	if (Arguments[ 'expression' ]) {
-		var expr = Arguments[ 'expression' ])
+		var expr = Arguments[ 'expression' ]
 			, results = [ ];
 
 		return q.all(
@@ -53,7 +53,7 @@ function async ( Arguments, List, Callback ) {
 		} );
 	}
 	else if (Arguments[ 'function' ]) {
-		var f = Arguments[ 'function' ])
+		var f = Arguments[ 'function' ]
 			, results = [ ];
 
 		return q.all(
@@ -72,5 +72,8 @@ function async ( Arguments, List, Callback ) {
 
 	return undefined;
 }
+
+exports.sync  = sync;
+exports.async = async;
 
 // jane@cpan.org // vim:tw=80:ts=2:noet

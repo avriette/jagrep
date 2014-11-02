@@ -1,5 +1,5 @@
 var assert  = require('assert');
-var Jgrep = require( '../jgrep.js' );
+var Jgrep = require( '../lib/jgrep.js' );
 
 var input    = [ 'test', 'another test', 1234, 'a string' ]
 	, results = [ ];

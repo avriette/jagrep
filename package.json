@@ -1,28 +1,25 @@
 {
-  "name"         : "jgrep",
-  "version"      : "0.1.0",
-  "description"  : "Javascript grep for Node",
-  "author"       : "Jane Avriette <jane@cpan.org>",
-  "preferGlobal" : false,
-  "private"      : true,
-  "license"      : "CC0-1.0",
-  "main"         : "jgrep.js",
-
-  "repository"   : {
-    "type" : "git",
-    "url"  : "https://github.com/avriette/jgrep"
+  "name": "jgrep",
+  "version": "0.1.0",
+  "description": "Javascript grep for Node",
+  "author": "Jane Avriette <jane@cpan.org>",
+  "preferGlobal": false,
+  "private": true,
+  "license": "CC0-1.0",
+  "main": "lib/jgrep",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avriette/jgrep"
   },
-
-  "directories"  : {
-    "example" : "examples"
+  "directories": {
+    "example": "examples",
+    "test": "test"
   },
-
-  "bugs"         : {
-    "url" : "https://github.com/avriette/jgrep/issues",
-    "email" : "jane@cpan.org"
+  "bugs": {
+    "url": "https://github.com/avriette/jgrep/issues",
+    "email": "jane@cpan.org"
   },
-
-  "keywords"     : [
+  "keywords": [
     "grep",
     "q",
     "promises",
@@ -32,8 +29,12 @@
     "synchronous",
     "asynchronous"
   ],
-
-  "dependencies" : {
-    "q"           : "*"
+  "dependencies": {
+    "q": "*"
+  },
+  "homepage": "https://github.com/avriette/jgrep",
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
   }
 }

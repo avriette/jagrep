@@ -18,10 +18,12 @@
 
   "keywords"     : [
     "grep",
+    "q",
     "promises",
     "list",
     "pattern",
     "expression",
+    "synchronous",
     "asynchronous"
   ],
 

@@ -16,6 +16,6 @@ Interface
 License
 =====
 
-This software is released under a Creative Commons "CC0" license. Basically, do what you like with it.
+This software is released under a [Creative Commons "CC0" license](https://github.com/avriette/jgrep/blob/master/LICENSE). Basically, do what you like with it.
 
 &copy; [@avriette](https://github.com/avriette) / jane avriette / [jane@cpan.org](mailto:jane@cpan.org)

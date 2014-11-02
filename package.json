@@ -4,7 +4,7 @@
   "description": "Javascript grep for Node",
   "author": "Jane Avriette <jane@cpan.org>",
   "preferGlobal": false,
-  "private": true,
+  "private": false,
   "license": "CC0-1.0",
   "main": "lib/jagrep.js",
   "repository": {

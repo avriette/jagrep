@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var Jgrep = require( './jgrep.js' );
+var Jgrep = require( 'jagrep.js' );
 
 var test    = [ 'test', 'another test', 1234, 'a string' ]
 	, results = [ ];

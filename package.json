@@ -1,22 +1,22 @@
 {
-  "name": "jgrep",
+  "name": "jagrep",
   "version": "0.1.0",
   "description": "Javascript grep for Node",
   "author": "Jane Avriette <jane@cpan.org>",
   "preferGlobal": false,
   "private": true,
   "license": "CC0-1.0",
-  "main": "lib/jgrep",
+  "main": "lib/jagrep.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/avriette/jgrep"
+    "url": "https://github.com/avriette/jagrep"
   },
   "directories": {
     "example": "examples",
     "test": "test"
   },
   "bugs": {
-    "url": "https://github.com/avriette/jgrep/issues",
+    "url": "https://github.com/avriette/jagrep/issues",
     "email": "jane@cpan.org"
   },
   "keywords": [
@@ -32,7 +32,7 @@
   "dependencies": {
     "q": "*"
   },
-  "homepage": "https://github.com/avriette/jgrep",
+  "homepage": "https://github.com/avriette/jagrep",
   "devDependencies": {},
   "scripts": {
     "test": "mocha"

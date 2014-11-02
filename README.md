@@ -1,4 +1,4 @@
-jgrep
+jagrep
 ====
 
 Node lacks a `grep` function. It should be pointed out that jquery *has* a [grep](http://api.jquery.com/jquery.grep/). For my own purposes, it was helpful from a design pattern standpoint, to have something that reminded me of perl's [grep](http://perldoc.perl.org/functions/grep.html). I wanted a simple interface that provided both synchronous and asynchronous interfaces to pattern-matching list transforms, and I wanted a syntax that was familiar to me. For many users, [`Array.filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) will probably be sufficient.
@@ -8,10 +8,10 @@ The `grep` implemented in this package *is not optimised for performance*, and l
 Interface
 =====
 
-* `var results = Jgrep.sync( { 'expression': new RegExp( '^test$' ) }, list )`
-* `var results = Jgrep.sync( { 'function' : function (t) { if ( t == 'test' ) return 1 } }, list )`
-* `var promise = Jgrep.async( { 'expression': new RegExp( '^test$' ) }, list )`
-* `Jgrep.async( { 'function' : function (t) { if ( t == 'test' ) return 1 } }, list, callback )`
+* `var results = Jagrep.sync( { 'expression': new RegExp( '^test$' ) }, list )`
+* `var results = Jagrep.sync( { 'function' : function (t) { if ( t == 'test' ) return 1 } }, list )`
+* `var promise = Jagrep.async( { 'expression': new RegExp( '^test$' ) }, list )`
+* `Jagrep.async( { 'function' : function (t) { if ( t == 'test' ) return 1 } }, list, callback )`
 
 License
 =====

@@ -33,11 +33,13 @@ var promise = Jagrep.async( { 'expression': new RegExp( '^test$' ) }, list )
 //
 Jagrep.async( { 'function' : function (t) { if ( t == 'test' ) return 1 } }, list, callback )
 
-// Does 'value' exist in list_a?
+// Does 'value' exist in list_a? Will be true or false.
 //
 var exists = Jagrep.in( list_a, 'value' );
 
 // Show me all the values from list_b that exist in list_a
+//
+// Note: this uses Jagrep.sync() under the covers, and is blocking.
 //
 var exists = Jagrep.all_in( list_a, list_b );
 

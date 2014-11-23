@@ -30,7 +30,8 @@
     "asynchronous"
   ],
   "dependencies": {
-    "q": "*"
+    "q": "*",
+    "chai": "*"
   },
   "homepage": "https://github.com/avriette/jagrep",
   "devDependencies": {},
